@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 19:03:27.725001",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "email",
+  "contact_number",
+  "sedex_certified",
+  "bsci_certified",
+  "hazardous_material",
+  "fsc_certifications",
+  "iso_14021_recycled",
+  "ukca_certified",
+  "timber_compliant"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bsci_certified",
+   "fieldtype": "Check",
+   "label": "BSCI Certified",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "hazardous_material",
+   "fieldtype": "Check",
+   "label": "Hazardous Material",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fsc_certifications",
+   "fieldtype": "Check",
+   "label": "FSC Certifications"
+  },
+  {
+   "default": "0",
+   "fieldname": "iso_14021_recycled",
+   "fieldtype": "Check",
+   "label": "ISO 14021 Recycled Content Standard Certified"
+  },
+  {
+   "default": "0",
+   "fieldname": "ukca_certified",
+   "fieldtype": "Check",
+   "label": "Are you UKCA Certified?",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "timber_compliant",
+   "fieldtype": "Check",
+   "label": "EU/UK Timber Compliant",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sedex_certified",
+   "fieldtype": "Check",
+   "label": "SEDEX Certified"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Product QC",
+   "link_fieldname": "supplier_id"
+  }
+ ],
+ "modified": "2023-09-22 15:23:01.571451",
+ "modified_by": "Administrator",
+ "module": "Vendor App",
+ "name": "Supplier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

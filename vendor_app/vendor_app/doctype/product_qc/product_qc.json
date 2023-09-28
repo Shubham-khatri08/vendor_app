@@ -1,0 +1,533 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 20:44:53.342935",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_id",
+  "supplier_part_number",
+  "product_length_cm",
+  "product_width_cm",
+  "product_height_cm",
+  "carton_length_cm",
+  "carton_width_cm",
+  "carton_height_cm",
+  "cbm",
+  "product_weight_kg",
+  "carton_weight_kg",
+  "base_cost",
+  "suggested_rrp",
+  "product_description",
+  "moq",
+  "order_to_ready_to_ship",
+  "flat_pack",
+  "image_1",
+  "image_2",
+  "image_3",
+  "video_1",
+  "base_material",
+  "base_metal_finish_application",
+  "base_type",
+  "base_wood_species",
+  "drawers",
+  "ista1acertified",
+  "leg_design",
+  "table_top_shape",
+  "top_manufactured_wood_type",
+  "top_material",
+  "top_metal_finish_application",
+  "top_wood_species",
+  "upholstered",
+  "upholstery_material",
+  "wheels_included",
+  "inlay",
+  "inlay_material",
+  "style",
+  "assembly_required",
+  "cabinets_included",
+  "country_of_origin",
+  "ds_primary_product_style",
+  "ds_secondary_product_style",
+  "ds_wood_tone",
+  "decal_laminate_design",
+  "drawer_glide_material",
+  "drawer_glide_mechanism",
+  "euuk_timber_compliant",
+  "lift_top",
+  "made_to_order",
+  "mirrored",
+  "product_type",
+  "removable_tray",
+  "scratch_resistant",
+  "supplier_intended_and_approved_use",
+  "sustainability_certificates",
+  "top_color",
+  "top_glass_type",
+  "trunk_storage",
+  "commercial_warranty"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier_part_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Supplier part number",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_length_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Product Length cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_width_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Product Width cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_height_cm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Product Height cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "carton_length_cm",
+   "fieldtype": "Float",
+   "label": "Carton Length cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "carton_width_cm",
+   "fieldtype": "Float",
+   "label": "Carton Width cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "carton_height_cm",
+   "fieldtype": "Float",
+   "label": "Carton Height cm",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "cbm",
+   "fieldtype": "Float",
+   "label": "CBM",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_weight_kg",
+   "fieldtype": "Float",
+   "label": "Product Weight kg",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "carton_weight_kg",
+   "fieldtype": "Float",
+   "label": "Carton Weight kg",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_cost",
+   "fieldtype": "Float",
+   "label": "Base cost ($)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "suggested_rrp",
+   "fieldtype": "Float",
+   "label": "Suggested RRP ($)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Text",
+   "label": "Product Description",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "moq",
+   "fieldtype": "Int",
+   "label": "MOQ",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_to_ready_to_ship",
+   "fieldtype": "Int",
+   "label": "Order to ready to ship (days)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "flat_pack",
+   "fieldtype": "Check",
+   "label": "Flat pack",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "image_1",
+   "fieldtype": "Data",
+   "label": "Image 1 (url link)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Data",
+   "label": "Image 2 (url link)",
+   "non_negative": 1,
+   "options": "About Us Settings",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image_3",
+   "fieldtype": "Data",
+   "label": "Image 3 (url link)",
+   "non_negative": 1,
+   "options": "About Us Settings",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video_1",
+   "fieldtype": "Data",
+   "label": "Video 1 (url link)",
+   "non_negative": 1,
+   "options": "About Us Settings",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_material",
+   "fieldtype": "Select",
+   "label": "Base Material",
+   "non_negative": 1,
+   "options": "Acrylic\nAluminium",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_metal_finish_application",
+   "fieldtype": "Select",
+   "label": "Base Metal Finish Application",
+   "non_negative": 1,
+   "options": "Bronze",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_type",
+   "fieldtype": "Select",
+   "label": "Base Type",
+   "non_negative": 1,
+   "options": "3 Legs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "base_wood_species",
+   "fieldtype": "Select",
+   "label": "Base Wood Species",
+   "non_negative": 1,
+   "options": "Acacia",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "drawers",
+   "fieldtype": "Check",
+   "label": "Drawers",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "ista1acertified",
+   "fieldtype": "Check",
+   "label": "ISTA1ACertified",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "leg_design",
+   "fieldtype": "Select",
+   "label": "Leg Design",
+   "non_negative": 1,
+   "options": "Ball Feet"
+  },
+  {
+   "fieldname": "table_top_shape",
+   "fieldtype": "Select",
+   "label": "Table Top Shape",
+   "non_negative": 1,
+   "options": "Free Form"
+  },
+  {
+   "fieldname": "top_manufactured_wood_type",
+   "fieldtype": "Select",
+   "label": "Top Manufactured Wood Type",
+   "non_negative": 1,
+   "options": "MDF"
+  },
+  {
+   "fieldname": "top_material",
+   "fieldtype": "Select",
+   "label": "Top Material",
+   "non_negative": 1,
+   "options": "Acrylic"
+  },
+  {
+   "fieldname": "top_metal_finish_application",
+   "fieldtype": "Select",
+   "label": "Top Metal Finish Application",
+   "non_negative": 1,
+   "options": "Bronze"
+  },
+  {
+   "fieldname": "top_wood_species",
+   "fieldtype": "Select",
+   "label": "Top Wood Species",
+   "non_negative": 1,
+   "options": "Acacia"
+  },
+  {
+   "default": "0",
+   "fieldname": "upholstered",
+   "fieldtype": "Check",
+   "label": "Upholstered",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "upholstery_material",
+   "fieldtype": "Select",
+   "label": "Upholstery Material",
+   "non_negative": 1,
+   "options": "100% Cotton"
+  },
+  {
+   "default": "0",
+   "fieldname": "wheels_included",
+   "fieldtype": "Check",
+   "label": "Wheels Included"
+  },
+  {
+   "default": "0",
+   "fieldname": "inlay",
+   "fieldtype": "Check",
+   "label": "Inlay"
+  },
+  {
+   "fieldname": "inlay_material",
+   "fieldtype": "Select",
+   "label": "Inlay Material",
+   "non_negative": 1,
+   "options": "Bone"
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Select",
+   "label": "Style",
+   "non_negative": 1,
+   "options": "American Traditional"
+  },
+  {
+   "default": "0",
+   "fieldname": "assembly_required",
+   "fieldtype": "Check",
+   "label": "Assembly Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "cabinets_included",
+   "fieldtype": "Check",
+   "label": "Cabinets Included"
+  },
+  {
+   "fieldname": "country_of_origin",
+   "fieldtype": "Select",
+   "label": "Country of Origin",
+   "non_negative": 1,
+   "options": "India"
+  },
+  {
+   "fieldname": "ds_primary_product_style",
+   "fieldtype": "Select",
+   "label": "DS Primary Product Style",
+   "non_negative": 1,
+   "options": "Boho"
+  },
+  {
+   "fieldname": "ds_secondary_product_style",
+   "fieldtype": "Select",
+   "label": "DS Secondary Product Style",
+   "non_negative": 1,
+   "options": "Beach"
+  },
+  {
+   "fieldname": "ds_wood_tone",
+   "fieldtype": "Select",
+   "label": "DS Wood Tone",
+   "non_negative": 1,
+   "options": "Gray Wood"
+  },
+  {
+   "fieldname": "decal_laminate_design",
+   "fieldtype": "Select",
+   "label": "Decal Laminate Design",
+   "non_negative": 1,
+   "options": "Glass"
+  },
+  {
+   "fieldname": "drawer_glide_material",
+   "fieldtype": "Select",
+   "label": "Drawer Glide Material",
+   "non_negative": 1,
+   "options": "Metal\nPlastic\nWood"
+  },
+  {
+   "fieldname": "drawer_glide_mechanism",
+   "fieldtype": "Select",
+   "label": "Drawer Glide Mechanism",
+   "non_negative": 1,
+   "options": "Roller Glides"
+  },
+  {
+   "default": "0",
+   "fieldname": "euuk_timber_compliant",
+   "fieldtype": "Check",
+   "label": "EUUK Timber Compliant"
+  },
+  {
+   "default": "0",
+   "fieldname": "lift_top",
+   "fieldtype": "Check",
+   "label": "Lift Top"
+  },
+  {
+   "default": "0",
+   "fieldname": "made_to_order",
+   "fieldtype": "Check",
+   "label": "Made to Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "mirrored",
+   "fieldtype": "Check",
+   "label": "Mirrored"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Select",
+   "label": "Product Type",
+   "non_negative": 1,
+   "options": "Coffee Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "removable_tray",
+   "fieldtype": "Check",
+   "label": "Removable Tray"
+  },
+  {
+   "default": "0",
+   "fieldname": "scratch_resistant",
+   "fieldtype": "Check",
+   "label": "Scratch Resistant"
+  },
+  {
+   "fieldname": "supplier_intended_and_approved_use",
+   "fieldtype": "Select",
+   "label": "Supplier Intended and Approved Use",
+   "non_negative": 1,
+   "options": "Residential Use\nNon Residential Use"
+  },
+  {
+   "fieldname": "sustainability_certificates",
+   "fieldtype": "Select",
+   "label": "Sustainability Certificates",
+   "non_negative": 1,
+   "options": "Blue Angel Certified"
+  },
+  {
+   "fieldname": "top_color",
+   "fieldtype": "Color",
+   "label": "Top Color",
+   "non_negative": 1,
+   "options": "Blue Angel Certified"
+  },
+  {
+   "fieldname": "top_glass_type",
+   "fieldtype": "Select",
+   "label": "Top Glass Type",
+   "non_negative": 1,
+   "options": "Frosted Glass"
+  },
+  {
+   "default": "0",
+   "fieldname": "trunk_storage",
+   "fieldtype": "Check",
+   "label": "Trunk Storage",
+   "non_negative": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "commercial_warranty",
+   "fieldtype": "Check",
+   "label": "Commercial Warranty",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "supplier_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier ID",
+   "non_negative": 1,
+   "options": "Supplier",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-22 15:25:32.896716",
+ "modified_by": "Administrator",
+ "module": "Vendor App",
+ "name": "Product QC",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
