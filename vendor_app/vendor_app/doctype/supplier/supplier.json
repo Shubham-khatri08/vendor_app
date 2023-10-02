@@ -7,10 +7,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "user_id",
   "supplier_name",
   "email",
   "contact_number",
   "sedex_certified",
+  "isonboarded",
   "bsci_certified",
   "hazardous_material",
   "fsc_certifications",
@@ -30,27 +32,25 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Phone",
-   "label": "Contact Number",
-   "reqd": 1
+   "label": "Contact Number"
   },
   {
    "default": "0",
    "fieldname": "bsci_certified",
    "fieldtype": "Check",
-   "label": "BSCI Certified",
-   "reqd": 1
+   "label": "BSCI Certified"
   },
   {
    "default": "0",
    "fieldname": "hazardous_material",
    "fieldtype": "Check",
-   "label": "Hazardous Material",
-   "reqd": 1
+   "label": "Hazardous Material"
   },
   {
    "default": "0",
@@ -68,31 +68,43 @@
    "default": "0",
    "fieldname": "ukca_certified",
    "fieldtype": "Check",
-   "label": "Are you UKCA Certified?",
-   "reqd": 1
+   "label": "Are you UKCA Certified?"
   },
   {
    "default": "0",
    "fieldname": "timber_compliant",
    "fieldtype": "Check",
-   "label": "EU/UK Timber Compliant",
-   "reqd": 1
+   "label": "EU/UK Timber Compliant"
   },
   {
    "default": "0",
    "fieldname": "sedex_certified",
    "fieldtype": "Check",
    "label": "SEDEX Certified"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "User ID",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "isonboarded",
+   "fieldtype": "Check",
+   "label": "isOnboarded"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [
   {
-   "link_doctype": "Product QC",
+   "link_doctype": "Product",
    "link_fieldname": "supplier_id"
   }
  ],
- "modified": "2023-09-22 15:23:01.571451",
+ "modified": "2023-10-02 16:10:14.889649",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Supplier",
@@ -107,6 +119,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
    "share": 1,
    "write": 1
   }

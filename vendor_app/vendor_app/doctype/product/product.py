@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ProductQC(Document):
+class Product(Document):
 	pass
