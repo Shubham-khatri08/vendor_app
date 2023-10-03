@@ -24,10 +24,8 @@
   "moq",
   "order_to_ready_to_ship",
   "flat_pack",
-  "image_1",
-  "image_2",
-  "image_3",
-  "video_1",
+  "images",
+  "videos",
   "base_material",
   "base_metal_finish_application",
   "base_type",
@@ -185,37 +183,6 @@
    "fieldtype": "Check",
    "label": "Flat pack",
    "non_negative": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "image_1",
-   "fieldtype": "Data",
-   "label": "Image 1 (url link)",
-   "non_negative": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "image_2",
-   "fieldtype": "Data",
-   "label": "Image 2 (url link)",
-   "non_negative": 1,
-   "options": "About Us Settings",
-   "reqd": 1
-  },
-  {
-   "fieldname": "image_3",
-   "fieldtype": "Data",
-   "label": "Image 3 (url link)",
-   "non_negative": 1,
-   "options": "About Us Settings",
-   "reqd": 1
-  },
-  {
-   "fieldname": "video_1",
-   "fieldtype": "Data",
-   "label": "Video 1 (url link)",
-   "non_negative": 1,
-   "options": "About Us Settings",
    "reqd": 1
   },
   {
@@ -503,11 +470,23 @@
    "non_negative": 1,
    "options": "Supplier",
    "reqd": 1
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "JSON",
+   "label": "Images",
+   "reqd": 1
+  },
+  {
+   "fieldname": "videos",
+   "fieldtype": "JSON",
+   "label": "Videos",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-22 15:25:32.896716",
+ "modified": "2023-10-03 20:45:39.933221",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Product",

@@ -17,6 +17,9 @@ def register_user(email, name, password):
     # Save the user document
     new_user.insert()
 
+    # Assign the role to the user
+    frappe.get_doc("User", email).add_roles("Supplier")
+
     new_supplier = frappe.get_doc({
         "doctype": "Supplier",
         "user_id": email,
