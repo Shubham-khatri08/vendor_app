@@ -75,10 +75,11 @@ def generate_keys(user):
     api_secret = frappe.generate_hash(length=15)
 
     if not user_details.api_key:
+        print("hellllloooo")
         api_key = frappe.generate_hash(length=15)
         user_details.api_key = api_key
 
     user_details.api_secret = api_secret
-    user_details.save()
+    user_details.save(ignore_permissions=True)
 
     return api_secret

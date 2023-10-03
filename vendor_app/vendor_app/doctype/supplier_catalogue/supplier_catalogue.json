@@ -31,12 +31,12 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Uploaded\nProcessed\nOn Hold"
+   "options": "Uploaded\nProcessed\nOn Hold\nDeleted"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-03 20:51:43.489568",
+ "modified": "2023-10-03 20:57:53.695789",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Supplier Catalogue",
