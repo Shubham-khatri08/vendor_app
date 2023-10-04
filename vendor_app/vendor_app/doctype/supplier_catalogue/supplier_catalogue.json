@@ -8,8 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "supplier_id",
-  "catalogues",
-  "status"
+  "catalogues"
  ],
  "fields": [
   {
@@ -25,18 +24,11 @@
    "fieldname": "catalogues",
    "fieldtype": "JSON",
    "label": "Catalogues"
-  },
-  {
-   "default": "Uploaded",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Uploaded\nProcessed\nOn Hold\nDeleted"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-03 20:57:53.695789",
+ "modified": "2023-10-04 17:29:48.712031",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Supplier Catalogue",
@@ -51,6 +43,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
    "share": 1,
    "write": 1
   }

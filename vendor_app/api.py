@@ -64,7 +64,8 @@ def login(usr, pwd):
         "api_secret":api_generate,
         "username":user.username,
         "email":user.email,
-        "supplier_id": supplier[0].name
+        "supplier_id": supplier[0].name,
+        "is_onboarded": supplier[0].isonboarded
 
     }
 
