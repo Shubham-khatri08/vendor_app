@@ -50,7 +50,7 @@ def login(usr, pwd):
 
     api_generate = generate_keys(frappe.session.user)
     user = frappe.get_doc('User', frappe.session.user)
-    supplier = frappe.get_list('Supplier', filters={'user_id':user.name})
+    supplier = frappe.get_list('Supplier', filters={'user_id':user.name}, fields=["isonboarded", "name"])
 
     # TODO Handle error
     # if(len(supplier) == 1):

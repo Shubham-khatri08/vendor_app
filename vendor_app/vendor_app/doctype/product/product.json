@@ -9,6 +9,7 @@
  "field_order": [
   "supplier_id",
   "supplier_part_number",
+  "product_name",
   "product_length_cm",
   "product_width_cm",
   "product_height_cm",
@@ -190,7 +191,7 @@
    "fieldtype": "Select",
    "label": "Base Material",
    "non_negative": 1,
-   "options": "Acrylic\nAluminium",
+   "options": "Acrylic\nAluminium\nBrass\nConcrete\nCopper\nGlass\nIron\nManufactured Wood\nMetal\nNickel\nPlastic\nPlastic/Acrylic\nRattan/Wicker\nSlate/Stone\nSolid + Manufactured Wood\nSolid Wood\nStainless Steel\nSteel\nStone\nWood",
    "reqd": 1
   },
   {
@@ -198,7 +199,7 @@
    "fieldtype": "Select",
    "label": "Base Metal Finish Application",
    "non_negative": 1,
-   "options": "Bronze",
+   "options": "Bronze\nBrushed\nChrome\nHammered\nMatte\nOil Rubbed\nPolished\nPowder Coated\nRust\nSatin",
    "reqd": 1
   },
   {
@@ -206,7 +207,7 @@
    "fieldtype": "Select",
    "label": "Base Type",
    "non_negative": 1,
-   "options": "3 Legs",
+   "options": "3 Legs\n4 Legs\n6 legs\nAbstract\nBlock\nCross Legs\nDrum\nFigurine\nFloor Shelf\nFrame\nPedestal\nSled\nSolid\nTrestle\nWheel",
    "reqd": 1
   },
   {
@@ -214,7 +215,7 @@
    "fieldtype": "Select",
    "label": "Base Wood Species",
    "non_negative": 1,
-   "options": "Acacia",
+   "options": "Acacia\nAlder\nAsh\nBamboo\nBeech\nBirch\nCamphor, Cedar, Cherry, Elm, Eucalyptus, Fir, Hickory, Mahogany, Mango, Maple, Oak, Pine, Poplar, Rosewood, Rubberwood, Sheesham, Spruce, Teak, Walnut",
    "reqd": 1
   },
   {
@@ -238,42 +239,42 @@
    "fieldtype": "Select",
    "label": "Leg Design",
    "non_negative": 1,
-   "options": "Ball Feet"
+   "options": "Ball Feet\nBlock Feet\nBun Feet\nCabriole Legs\nFluted\nQueen Ann\nScroll\nSled\nSolid\nSquared Legs\nStraight legs\nTurned Legs\nX-leg"
   },
   {
    "fieldname": "table_top_shape",
    "fieldtype": "Select",
    "label": "Table Top Shape",
    "non_negative": 1,
-   "options": "Free Form"
+   "options": "Free Form\nHexagonal\nOctagonal\nOval\nPentagonal\nRectangular\nRound\nSemi-Circle\nSquare\nTriangular"
   },
   {
    "fieldname": "top_manufactured_wood_type",
    "fieldtype": "Select",
    "label": "Top Manufactured Wood Type",
    "non_negative": 1,
-   "options": "MDF"
+   "options": "MDF\nParticle Board/Chipboard\nPlywood/Laminate Board"
   },
   {
    "fieldname": "top_material",
    "fieldtype": "Select",
    "label": "Top Material",
    "non_negative": 1,
-   "options": "Acrylic"
+   "options": "Acrylic\nAluminium\nBrass\nCeramic Tile\nConcrete\nCopper\nFabric\nFaux Leather\nFaux Marble\nGenuine Leather\nGenuine Marble\nGlass\nGranite\nIron\nLeather\nManufactured Wood\nMetal\nMirrored\nNickel\nPlastic\nPlastic/Acrylic\nRattan/Wicker\nResin\nSlate\nSlate/Stone\nSolid + Manufactured Wood\nSolid Wood\nStainless Steel\nSteel\nStone\nTerrazzo\nWood\nWrought Iron"
   },
   {
    "fieldname": "top_metal_finish_application",
    "fieldtype": "Select",
    "label": "Top Metal Finish Application",
    "non_negative": 1,
-   "options": "Bronze"
+   "options": "Bronze\nBrushed\nChrome\nHammered\nMatte\nOil Rubbed\nPolished\nPowder Coated\nRust\nSatin"
   },
   {
    "fieldname": "top_wood_species",
    "fieldtype": "Select",
    "label": "Top Wood Species",
    "non_negative": 1,
-   "options": "Acacia"
+   "options": "Acacia\nAlder\nAsh\nBamboo\nBeech\nBirch\nCamphor, Cedar, Cherry, Elm, Eucalyptus, Fir, Hickory, Mahogany, Mango, Maple, Oak, Pine, Poplar, Rosewood, Rubberwood, Sheesham, Spruce, Teak, Walnut"
   },
   {
    "default": "0",
@@ -288,7 +289,7 @@
    "fieldtype": "Select",
    "label": "Upholstery Material",
    "non_negative": 1,
-   "options": "100% Cotton"
+   "options": "100% Cotton\n100% Linen\n100% Polyester\nAcrylic\nChenille\nCotton Blend\nCotton Twill\nFaux Leather\nGenuine Leather\nLinen Blend\nMicrofiber/Microsuede\nPolyester Blend\nPolypropylene/Olefin\nRayon/Viscose\nSuede\nVelvet"
   },
   {
    "default": "0",
@@ -307,14 +308,14 @@
    "fieldtype": "Select",
    "label": "Inlay Material",
    "non_negative": 1,
-   "options": "Bone"
+   "options": "Bone\nCeramic\nGlass\nLeather\nMetal\nPlastic\nStone\nWood"
   },
   {
    "fieldname": "style",
    "fieldtype": "Select",
    "label": "Style",
    "non_negative": 1,
-   "options": "American Traditional"
+   "options": "American Traditional\nAntik\nArt Deco\nAsian Inspired\nBeachy\nBohemian\nBold & Eclectic Modern\nCabin / Lodge\nCanadiana\nCasual\nChildren's\nClassic\nCoastal\nCottage Americana\nCountry Rustic\nEclectic\nEuropean Colonial\nFarmhouse / Country\nFrench Country\nGarden\nGlam\nGlam Sleek\nGlobal Inspired\nIndustrial\nMid-Century Modern\nMinimalist\nMission Shaker\nModern\nModern & Contemporary\nModern Farmhouse\nModern Rustic\nNatural Modern\nNautical\nNo Style\nOrnate Glam\nOrnate Traditional\nPosh & Luxe\nPreppy\nRetro\nRustic\nScandinavian\nSleek & Chic Modern\nTiffany\nTraditional\nTropical\nUtilitarian\nVintage"
   },
   {
    "default": "0",
@@ -340,14 +341,14 @@
    "fieldtype": "Select",
    "label": "DS Primary Product Style",
    "non_negative": 1,
-   "options": "Boho"
+   "options": "Boho\nCoastal\nCountry / Farmhouse\nGlam\nIndustrial\nModern\nRustic / Lodge\nStyle Agnostic\nTeen\nTraditional\nYouth"
   },
   {
    "fieldname": "ds_secondary_product_style",
    "fieldtype": "Select",
    "label": "DS Secondary Product Style",
    "non_negative": 1,
-   "options": "Beach"
+   "options": "American Traditional\nBeach\nClassic Boho\nClassic Farmhouse\nClassic Glam\nClassic Industrial\nContemporary Boho\nContemporary Glam\nContemporary Industrial\nDesert Lodge\nFrench Country\nLLB ONLY - Southern Traditional\nMid-Century Modern\nModern Farmhouse\nMountain Lodge\nNautical\nOrnate Traditional\nRetro\nScandinavian\nSeasonal\nSpecialty\nTeen Modern\nTeen Style Agnostic\nTeen Traditional\nTransitional Modern\nTransitional Traditional\nTropical\nUltra-Modern\nUtility\nYouth Boho\nYouth Coastal\nYouth Country\nYouth Glam\nYouth Industrial\nYouth Lodge\nYouth Modern\nYouth Style Agnostic\nYouth Traditional"
   },
   {
    "fieldname": "ds_wood_tone",
@@ -361,7 +362,7 @@
    "fieldtype": "Select",
    "label": "Decal Laminate Design",
    "non_negative": 1,
-   "options": "Glass"
+   "options": "Concrete\nGlass\nGranite\nMarble\nNo Decal/Laminate Design\nStone\nWood"
   },
   {
    "fieldname": "drawer_glide_material",
@@ -375,7 +376,7 @@
    "fieldtype": "Select",
    "label": "Drawer Glide Mechanism",
    "non_negative": 1,
-   "options": "Roller Glides"
+   "options": "Roller Glides\nBall Bearing Glides\nCenter Glides\nMetal Slide\nSide-Mounted Glides\nUnder-Mounted Glides\nWood Slide"
   },
   {
    "default": "0",
@@ -406,7 +407,7 @@
    "fieldtype": "Select",
    "label": "Product Type",
    "non_negative": 1,
-   "options": "Coffee Table"
+   "options": "Coffee Table\nCoffee Table Sets\nDrum\nTray Top\nTrunk"
   },
   {
    "default": "0",
@@ -436,17 +437,16 @@
   },
   {
    "fieldname": "top_color",
-   "fieldtype": "Color",
+   "fieldtype": "Data",
    "label": "Top Color",
-   "non_negative": 1,
-   "options": "Blue Angel Certified"
+   "non_negative": 1
   },
   {
    "fieldname": "top_glass_type",
    "fieldtype": "Select",
    "label": "Top Glass Type",
    "non_negative": 1,
-   "options": "Frosted Glass"
+   "options": "Beveled Glass\nFrosted Glass\nTempered Glass"
   },
   {
    "default": "0",
@@ -469,7 +469,8 @@
    "label": "Supplier ID",
    "non_negative": 1,
    "options": "Supplier",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "images",
@@ -482,11 +483,16 @@
    "fieldtype": "JSON",
    "label": "Videos",
    "reqd": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-03 21:33:31.837277",
+ "modified": "2023-10-06 14:17:07.626574",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Product",
