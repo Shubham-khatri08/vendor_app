@@ -11,6 +11,8 @@
   "supplier_name",
   "email",
   "contact_number",
+  "product_prefix",
+  "image",
   "sedex_certified",
   "isonboarded",
   "bsci_certified",
@@ -95,6 +97,17 @@
    "fieldname": "isonboarded",
    "fieldtype": "Check",
    "label": "isOnboarded"
+  },
+  {
+   "fieldname": "product_prefix",
+   "fieldtype": "Data",
+   "label": "Product Prefix",
+   "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -102,9 +115,21 @@
   {
    "link_doctype": "Product",
    "link_fieldname": "supplier_id"
+  },
+  {
+   "link_doctype": "Supplier Order",
+   "link_fieldname": "supplier"
+  },
+  {
+   "link_doctype": "Supplier Address",
+   "link_fieldname": "supplier"
+  },
+  {
+   "link_doctype": "Supplier Bank Details",
+   "link_fieldname": "supplier"
   }
  ],
- "modified": "2023-10-02 16:10:14.889649",
+ "modified": "2023-10-11 17:31:39.048297",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Supplier",

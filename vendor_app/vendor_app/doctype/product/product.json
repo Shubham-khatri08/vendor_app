@@ -66,7 +66,8 @@
   "top_color",
   "top_glass_type",
   "trunk_storage",
-  "commercial_warranty"
+  "commercial_warranty",
+  "is_active"
  ],
  "fields": [
   {
@@ -488,11 +489,23 @@
    "fieldname": "product_name",
    "fieldtype": "Data",
    "label": "Product Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "non_negative": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-10-06 14:17:07.626574",
+ "links": [
+  {
+   "link_doctype": "Supplier Order",
+   "link_fieldname": "product"
+  }
+ ],
+ "modified": "2023-10-11 17:32:34.606904",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Product",
