@@ -20,7 +20,9 @@
   "fsc_certifications",
   "iso_14021_recycled",
   "ukca_certified",
-  "timber_compliant"
+  "timber_compliant",
+  "is_verified",
+  "is_active"
  ],
  "fields": [
   {
@@ -108,6 +110,18 @@
    "fieldname": "image",
    "fieldtype": "Image",
    "label": "Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Is Verified"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -129,7 +143,7 @@
    "link_fieldname": "supplier"
   }
  ],
- "modified": "2023-10-11 17:31:39.048297",
+ "modified": "2023-10-11 17:40:22.410846",
  "modified_by": "Administrator",
  "module": "Vendor App",
  "name": "Supplier",
